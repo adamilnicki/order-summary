@@ -36,11 +36,11 @@ The designs were created to the following widths:
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
 :root{
-  --pale-blue:hsl(225, 100%, 94%);
-  --bright-blue:hsl(245, 75%, 52%);
-  --very-pale-blue:hsl(225, 100%, 98%);
-  --desaturated-blue:hsl(224, 23%, 55%);
-  --dark-blue:hsl(223,47%,23%);
+  --pale-blue:rgb(224, 232, 255);
+  --bright-blue:rgb(56, 41, 224);
+  --very-pale-blue:rgb(245, 247, 255);
+  --desaturated-blue:rgb(114, 128, 167);
+  --dark-blue:rgb(31, 47, 86);
 }
 
 * {
@@ -127,9 +127,10 @@ body {
   color:var(--desaturated-blue);
 }
 
-.card-plan span{
+.card-plan a{
   font-weight:700;
   font-size:0.7rem;
+  color:var(--bright-blue);
 }
 
 .btn{
@@ -146,11 +147,21 @@ body {
   box-shadow:0 15px 5px var(--pale-blue);
 }
 
+.btn:hover,
+.card-plan a:hover{
+  opacity:0.7;
+  text-decoration:none;
+}
+
 .card-cancel a{
   color:var(--desaturated-blue);
   text-decoration:none;
   font-weight:700;
   font-size:0.8rem;
+}
+
+.card-cancel a:hover{
+  color:var(--dark-blue);
 }
 
 .card-cancel{
